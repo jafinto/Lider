@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_perecederos">
+
+    <TextView
+        android:id="@+id/tituloPtextView"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:gravity="center"
+        android:text="PRODUCTOS PERECEDEROS"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/perecederosImageView"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        app:srcCompat="@drawable/noperecederos2" />
+
+    <EditText
+        android:id="@+id/codigoPerecederoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Código" />
+
+    <EditText
+        android:id="@+id/descripcionPerecederoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción" />
+
+    <EditText
+        android:id="@+id/precioPerecederoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/diasParaVencerEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Días para vencer"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nuevoValorPerecederoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo valor"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calcularNuevoValorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Nuevo Valor" />
+
+    <Button
+        android:id="@+id/crearPerecederoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Producto" />
+
+    <Button
+        android:id="@+id/consultarPerecederoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Producto" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_noperecederos">
+
+    <TextView
+        android:id="@+id/titulonoPtextView"
+        android:layout_width="382dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="PRODUCTOS NO PERECEDEROS"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/codigoNoPerecederoEditText"
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="19dp"
+        android:hint="Código del producto"
+        app:layout_constraintBottom_toTopOf="@+id/descripcionNoPerecederoEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/crearNoPerecederoButton"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Crear"
+        app:layout_constraintBottom_toTopOf="@+id/consultarNoPerecederoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="290dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulonoPtextView"
+        app:srcCompat="@drawable/noperecen" />
+
+    <Button
+        android:id="@+id/consultarNoPerecederoButton"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:text="Consultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tipoProductoEditText"
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="39dp"
+        android:hint="Tipo de producto"
+        app:layout_constraintBottom_toTopOf="@+id/crearNoPerecederoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/descripcionNoPerecederoEditText"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <EditText
+        android:id="@+id/descripcionNoPerecederoEditText"
+        android:layout_width="400dp"
+        android:layout_height="46dp"
+        android:hint="Descripción del producto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
